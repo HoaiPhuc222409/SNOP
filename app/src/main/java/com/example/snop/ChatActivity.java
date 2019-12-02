@@ -80,8 +80,8 @@ public class ChatActivity extends AppCompatActivity {
 
         chatList = findViewById(R.id.chatList);
         chatList.setHasFixedSize(true);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        linearLayoutManager.setReverseLayout(true);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+//        linearLayoutManager.setReverseLayout(true);
         linearLayoutManager.setStackFromEnd(true);
         chatList.setLayoutManager(linearLayoutManager);
 
@@ -196,7 +196,6 @@ public class ChatActivity extends AppCompatActivity {
 
                     adapterChat = new AdapterChat(ChatActivity.this, ChatList, receiverImage);
                     adapterChat.notifyDataSetChanged();
-
                     chatList.setAdapter(adapterChat);
                 }
             }
@@ -222,6 +221,7 @@ public class ChatActivity extends AppCompatActivity {
 
         String time = String.valueOf(System.currentTimeMillis());
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+
         HashMap<String, Object> chatmap = new HashMap<>();
         chatmap.put("sender", currentUserId);
         chatmap.put("receiver", receivedUserId);
