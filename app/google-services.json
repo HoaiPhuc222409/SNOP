@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "526897407862",
+    "firebase_url": "https://snop-ca089.firebaseio.com",
+    "project_id": "snop-ca089",
+    "storage_bucket": "snop-ca089.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526897407862:android:6f5fb99dbac6afd66c3c57",
+        "android_client_info": {
+          "package_name": "com.example.snop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526897407862-sih99ag12frs51dl7149u3aumjdp2ftp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.snop",
+            "certificate_hash": "ec5f6c52ae0f72e78611bf83fb9e694a159983b8"
+          }
+        },
+        {
+          "client_id": "526897407862-0gheo8f6agucei9r5crrpcdgfcbkd5m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa9fdaCAUIdT2U8v9x3-ZY724ZoxGtHos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526897407862-0gheo8f6agucei9r5crrpcdgfcbkd5m7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

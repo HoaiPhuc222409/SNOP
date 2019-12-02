@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/messageLayout"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:layout_gravity="right">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/custom_chat_profile_receiver"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/custom_chat_time_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:padding="15dp"
+            android:text="01/12/2019 4:03PM" />
+
+        <TextView
+            android:id="@+id/custom_chat_message_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:text="Receiver mess"
+            android:background="#A6D870"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/isSeen"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:text="send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

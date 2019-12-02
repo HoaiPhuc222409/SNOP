@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_cover"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_profile"/>
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentBottom="true"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal"
+                    android:layout_toRightOf="@id/profile_image">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/profile_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/cardview_light_background"
+                            android:layout_marginLeft="5dp"/>
+
+                        <TextView
+                            android:id="@+id/profile_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/cardview_light_background"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_setup"
+        android:src="@drawable/ic_setup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
